@@ -187,3 +187,58 @@
 - **Options:**
   - `-c` : Clear history
 
+### 31. `man`  
+**Rationale**: Short for "manual".  
+**Description**: Displays the manual page for a command.  
+**Options**:  
+- `-k` : Search for a keyword in manual pages  
+
+### 32. `alias`  
+**Rationale**: Creates shortcuts for commands.  
+**Description**: Defines or displays command aliases.  
+**Options**:  
+- `alias [name]='[command]'` : Create a new alias  
+
+### 33. `unalias`  
+**Rationale**: Removes command shortcuts.  
+**Description**: Deletes a previously defined alias.  
+**Options**:  
+- `-a` : Remove all aliases  
+
+### 34. `clear`  
+**Rationale**: Clears the terminal screen.  
+**Description**: Resets the terminal display for better readability.  
+
+### 35. `whoami`  
+**Rationale**: Stands for "who am I".  
+**Description**: Displays the current logged-in user.  
+
+### 36. `id`  
+**Rationale**: Displays user ID information.  
+**Description**: Shows user ID (UID), group ID (GID), and other details.  
+
+### 37. `df`  
+**Rationale**: Stands for "disk free".  
+**Description**: Shows available disk space.  
+**Options**:  
+- `-h` : Human-readable format  
+
+### 38. `scp`  
+**Rationale**: Stands for "secure copy".  
+**Description**: Transfers files between systems over SSH.  
+**Options**:  
+- `-r` : Copy directories recursively  
+- `-P [port]` : Specify SSH port  
+
+### 39. `nc`  
+**Rationale**: Short for "netcat".  
+**Description**: A versatile networking tool for debugging and testing.  
+**Options**:  
+- `-l` : Listen mode  
+- `-z` : Scan for open ports  
+
+### 40. `traceroute`  
+**Rationale**: Traces the route packets take to a host.  
+**Description**: Displays the path and transit delays of packets.  
+**Options**:  
+- `-n` : Display numeric IP addresses instead of hostnames  
