@@ -1,0 +1,31 @@
+docs/
+
+# dependencies
+/node_modules
+cli/node_modules
+cli/dist
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# env
+.env
+.env*.local
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# husky internal
+.husky/_
+
+.claude/

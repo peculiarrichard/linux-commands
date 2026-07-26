@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+build
+docs
+commands.md
+cli/dist
+cli/node_modules
