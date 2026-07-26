@@ -7,7 +7,12 @@ const adminAllowlist = (process.env.ADMIN_GITHUB_ALLOWLIST ?? "")
   .filter(Boolean);
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
-  providers: [GitHub],
+  providers: [
+    GitHub({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+    }),
+  ],
   pages: {
     signIn: "/admin/sign-in",
   },
