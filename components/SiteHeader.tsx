@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CommandPaletteTrigger } from "@/components/CommandPaletteTrigger";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export function SiteHeader() {
   return (
@@ -21,6 +22,7 @@ export function SiteHeader() {
             Suggest a command
           </Link>
           <CommandPaletteTrigger />
+          <ThemeToggle />
         </div>
       </div>
     </header>
