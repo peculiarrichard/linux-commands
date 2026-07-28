@@ -26,7 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      {/* This script runs before React hydrates to prevent the screen flicker from the theme. */}
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `const t=localStorage.getItem('theme');if(t&&t!=='system')document.documentElement.dataset.theme=t;`,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
         suppressHydrationWarning
